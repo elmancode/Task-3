@@ -1,0 +1,645 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+.container-fluid{
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+$text-color: #0B0614;
+
+// header
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    height: 62px;
+    align-items: center;
+    margin-top: 30px;
+  
+    .header-left{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            font-size: 32px;
+            color: $text-color;
+            font-weight: 900;
+        }
+        .line{
+            height: 32px;
+            border-right: 2px solid rgba(11, 6, 20, 0.3);
+            margin-left: 24px;
+            margin-right: 24px;
+        }
+        i{
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+        
+        
+        }
+
+        input{
+            border: none;
+            color: #0B06144D;
+            font-size: 16px;
+        }
+        
+    }
+   
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 40px;
+        li{
+            margin-left: 40px;
+            a {
+                color: $text-color;             
+            }
+        }
+        li a{
+            &:hover{
+                color: #FF5029;
+                transition: 1.2s;
+            }
+        
+
+        }
+        .sign-up a {
+            &:hover{
+                width: 126px;
+                height: 62px;
+                background-color: #FF5029;
+                color: #FFFFFF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 40px;
+                border-radius: 12px;
+                cursor: pointer;
+                transition: 1.2s;
+        
+                }
+
+        }
+    }
+}
+
+// section 1
+
+.introduction{
+    margin-top: 15px;
+    background-color: #f5e6eb;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+  
+
+
+    .intro-photo {
+        display: flex;
+        justify-content: center;
+        width: 1360px;
+        height: 740px;
+        background-image: url(../image/pexels-taryn-elliott-3889907\ 2.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+        }
+    
+    h1{
+        color: $text-color;
+        font-weight: 800;
+        font-size: 110px;
+        line-height: 120px;
+        width: 939px;
+        text-align: center;
+        margin-top: 60px;
+        position: absolute;
+        z-index: -1;
+        top: 60px;
+        margin-left: 15%;
+      
+    }
+.info{
+    width: 1240px;
+    height: 128px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    position: absolute;
+    bottom: -65px;
+    margin-left: 4%;
+    padding: 30px;
+    box-shadow: 0px 30px 60px rgba(198, 191, 191, 0.18);
+
+    p{
+        color: $text-color;
+        opacity: 0.5;
+        font-size: 14px;
+        font-weight: 50;
+    }
+
+    .line{
+        height: 52px;
+        border-right: 2px solid #0B0614;
+        padding-right: 30px;
+        opacity: 0.2;
+      
+    }
+
+    .gender, .age, .language, .Lacalisation{
+        select{
+            border: none;
+            width: 200px;
+            font-size: 20px;
+            margin-right: 30px;
+           
+        }
+
+    }
+
+    .search{
+        width: 135px;
+        height: 80px;
+        border-radius: 15px;
+        font-size: 20px;
+        font-weight: 700;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        &:hover {
+        background-color: #FF5029;
+        color: #FFFFFF;
+        cursor: pointer;
+        transition: 1.2s;
+        }
+    }
+}
+     
+}
+
+// section 2
+
+.guides{
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2{
+        font-size: 64px;
+        font-weight: 800;
+    }
+    .all-guides{
+        &:hover{
+            width: 208px;
+            height: 70px;
+            background-color: #FF5029;
+            color: #FFFFFF;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            cursor: pointer;
+            transition: 1.2s;   
+            border-radius: 15px; 
+            }
+    }
+
+}
+
+.guides-info{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px -8px 20px rgba(235, 235, 235, 0.15), 
+    0px 30px 60px rgba(198, 191, 191, 0.15);
+    border-radius: 20px;
+    margin-top: 100px;
+
+h2{
+    font-size: 24px;
+}
+
+    }
+    .photo{
+        width: 288px;
+        height: 396px;
+        margin: 5px;
+        padding: 50px;
+        &:hover{
+            background-color: #FF5029;
+            color: #FFFFFF;
+            transition: 1s;
+            cursor: pointer;
+            border-radius: 15px;
+        &:hover i{
+            color: #FFFFFF;
+            transition: 1s;
+        }
+        }
+
+    img{
+        border-radius: 50%;
+        margin-bottom: 20px;
+        border: 2px solid #FF5029;
+        
+    }
+   
+    .stars{
+        margin: 15px;
+        i{
+            color: #FF5029;
+        }
+    }
+    
+    }
+
+    .how-work{
+        font-size: 64px;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .info-travel{
+        display: flex;
+        justify-content: space-between;
+
+        .select-guide{
+            width: 393px;
+            height: 596px;
+            background-color: #f5e6eb;
+            border-radius: 20px;
+            text-align: center;
+            padding-top: 90px;
+          
+            .info-back{
+                position: absolute;
+                margin-left: 100px;
+                img{
+                    border-radius: 50%;
+                    opacity: 0.7;
+                    top: 90px;
+                   }
+            }
+
+            .info-tour{
+                position: relative;              
+               
+            }
+        }
+
+     h2{
+        width: 250px;
+        font-size: 40px;
+        line-height: 50px;
+        margin-left: 20%;
+        padding-top: 50px;
+      
+
+
+     }   
+    }
+
+    // section 3
+    .are-you-tourist{
+        margin-top: 200px;
+        background-image: url(../image/katerina-kerdi\ back.png);
+        border-radius: 24px;
+        position: relative;
+        z-index: 1;
+      
+    
+    
+        .tourist-photo {
+            display: flex;
+            justify-content: center;
+            width: 1360px;
+            height: 740px;
+            background-image: url(../image/katerina-kerdi.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 24px;
+            }
+        
+        h1{
+            color: $text-color;
+            font-weight: 800;
+            font-size: 110px;
+            line-height: 120px;
+            width: 939px;
+            text-align: center;
+            margin-top: 60px;
+            position: absolute;
+            z-index: -1;
+            top: 105px;
+            margin-left: 15%;
+        }
+
+        .content{
+            width: 1240px;
+            height: 227px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #FFFFFF;
+            border-radius: 24px;
+            position: absolute;
+            bottom: -65px;
+            margin-left: 4%;
+            padding: 30px;
+            box-shadow: 0px 30px 60px rgba(198, 191, 191, 0.18);
+            p{
+                width: 565px;
+                font-size: 40px;
+                font-weight: 700;
+                span{
+                    color: #FF5029;
+                }
+            }
+
+
+            .I-am-guide{
+
+                .guide{
+                    width: 260px;
+                    height: 70px;
+                    border-radius: 15px;
+                    font-size: 20px;
+                    font-weight: 700;
+                    display: flex;
+                    justify-content:center;
+                    align-items: center;
+                   
+                    &:hover {
+                    background-color: #FF5029;
+                    color: #FFFFFF;
+                    cursor: pointer;
+                    transition: 1.2s;
+                    }  
+                }
+                .join-us{
+                    width: 260px;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 30px;
+            
+
+                   .guide-photo{
+                    width: 140px;
+                    display:flex;
+
+                    .imgage1{
+                        float: left;
+                        position: absolute;
+                    }
+                    
+                   .image2{
+                     float: left;
+                     position: relative;
+                     margin-left: -23px;
+                   }
+                   .image3{
+                    float: left;
+                    position: relative;
+                    margin-left: -23px;
+                  }
+
+                  .image4{
+                    float: left;
+                    position: relative;
+                    margin-left: -23px;
+                  }
+                    
+                   }
+
+                    p {
+                        width: 103px;
+                        font-size: 16px;
+                        span{
+                            color: #FF5029;
+                                }
+                        }
+                }
+               
+            }
+        
+
+        }
+
+    }    
+
+    // section 5
+
+    .learn-egypt{
+        font-size: 64px;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+        margin-bottom: 100px;
+    }
+
+    .about-egypt{
+        width: 1240px;
+        height: 637px;
+
+
+        display: flex;
+        justify-content: space-between;
+        .hotel{
+            width: 605px;
+            height: 607px;
+            padding: 30px;
+            background-color: #FFFFFF;
+            border-radius: 20px;
+            box-shadow: 0px -8px 20px rgba(235, 235, 235, 0.15), 0px 30px 60px rgba(198, 191, 191, 0.15);
+       
+            img{
+            border-radius: 20px;
+        }
+        
+        }
+
+
+        p{
+            width: 115px;
+            height: 47px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: #FF5029;
+            width: 115px;
+            height: 47px;
+            background-color: #FEF4F5;
+            margin-top: 30px;
+        }
+        h3{
+            width: 354px;
+            height: 104px;
+            font-size: 40px;
+            font-weight: 700;
+            margin-top: 10px;
+            
+        }
+
+        .restaurant-piramida{
+            width: 605px;
+            height: 637px;
+           
+
+            .restaurant{
+                display: flex;
+                height: 303px;
+                padding: 30px;
+                border-radius: 20px;
+                box-shadow: 0px -8px 20px rgba(235, 235, 235, 0.15), 0px 30px 60px rgba(198, 191, 191, 0.15);
+                img{
+                    border-radius: 20px;
+                }
+                
+            .content{
+                margin-left: 30px;
+            }
+            }
+
+            .piramida{
+                display: flex;
+                height: 303px;
+                padding: 30px;
+                border-radius: 20px;
+                box-shadow: 0px -8px 20px rgba(235, 235, 235, 0.15), 0px 30px 60px rgba(198, 191, 191, 0.15);
+                img{
+                    border-radius: 20px;
+                }
+            }
+            .content{
+                margin-left: 30px;
+            }
+
+        }
+    }
+
+
+
+
+    .footer-container{
+        width: 1500px;
+        height: 460px;
+        margin: 0 auto;
+        background-color: #0B0614;
+        margin-top: 50px;
+    
+        .container{
+            .footer{
+                display: flex;
+                justify-content: space-between;
+                padding-top: 90px;
+                border-bottomm: 1px solid rgba(255, 255, 255, 0.15);
+                padding-bottom: 60px;
+               
+                .egypt-tour{
+                    color: #FFFFFF;
+                    width: 333px;
+                    
+                   h3{
+                    font-size: 36px;
+                    margin-bottom: 30px;
+                   }
+                   
+                }
+                .useful-links{
+                    color: #FFFFFF;
+                    h3{
+                        font-size: 36px;
+                        margin-bottom: 30px;
+                       }
+                      li{
+                        margin:12px
+                      } 
+                }
+                .resources{
+                    color: #FFFFFF;
+                    h3{
+                        font-size: 36px;
+                        margin-bottom: 30px;
+                       }
+                      li{
+                        margin:12px
+                      } 
+                }
+
+                .mail{
+                    display: flex;
+                    text-align: center;
+            
+                }
+                .loc{
+                    display: flex;
+                    text-align: center;
+
+                }
+               
+
+                .social{
+                    margin-top: 30px;
+                }
+               
+            }
+
+        }
+    }
+
+    .copy-right{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        color: #f5e6eb;
+
+        .copy{
+            span{
+                color: #FF5029;
+            }
+        }
+
+        .privacy{
+            span{
+                margin: 10px;
+            }
+        }
+
+    }
+    
+        
+
+
+   
+    
+
+    
+
+    
+
+   
+
+        
